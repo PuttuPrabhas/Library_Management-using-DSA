@@ -313,10 +313,9 @@ public class library_management {
         Calendar cal = Calendar.getInstance();
 
         // Create an array to hold 3 Student objects for demonstration.
-        Student[] array = new Student[3];
-        array[0] = new Student("Rajvi", 1741078, "B.Tech-ICT");
-        array[1] = new Student("Krushna", 1741086, "B.Tech-ICT");
-        array[2] = new Student("Kalagee", 1741052, "B.Tech-ICT");
+        Student[] array = {
+         new Student("Prabhas", 3373, "B.Tech-CSM");
+        }
 
         // A 2D array to store book quantities.
         // arr[i][0] = total quantity of book 'i'.
@@ -363,7 +362,7 @@ public class library_management {
         // Display login credentials for the admin/librarian.
         System.out.println("====================================");
         System.out.println(" Admin Login Credentials:");
-        System.out.println(" ID: dsa@1");
+        System.out.println(" ID: Admin@123");
         System.out.println(" Password: abc123");
         System.out.println("====================================");
 
@@ -381,7 +380,7 @@ public class library_management {
             switch (ch1) {
                 case 1: // Librarian Login
                     String pwd1 = "abc123";
-                    String id1 = "dsa@1";
+                    String id1 = "Admin@123";
 
                     System.out.println("\nEnter UserId:");
                     String id2 = input.next();
